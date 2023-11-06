@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "digital";
+  src: url("./DS-DIGIT.TTF");
+}
+
+.table {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.screen {
+  margin: auto;
+  word-wrap: break-word;
+  box-shadow: 0 9px #612b71, 0 0 60px 0 rgb(155, 86, 176);
+  border: 20px solid #451952;
+  background-color: #333333;
+  color: white;
+  padding: 35px;
+  border-radius: 30px;
+  text-align: center;
+  font: inherit;
+  font-family: digital;
+  vertical-align: baseline;
+  width: 70vh;
+  height: 25vh;
+}
+
+.text {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 720px) {
+  .screen {
+    width: 220px;
+    height: 150px;
+    font-size: small;
+    box-shadow: 0 5px #612b71, 0 0 20px 0 rgb(155, 86, 176);
+    border: 20px solid #451952;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+}
