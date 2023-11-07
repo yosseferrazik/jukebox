@@ -3,7 +3,7 @@ import "./Screen.css";
 import Button from "../Button/Button";
 import { tracks } from "../Button/songs/track";
 
-export const Screen = () => {
+export const Screen = ({ pasarId }) => {
   const [playing, setPlaying] = useState(false);
   const [actual, setActual] = useState(" ");
   const [id, setId] = useState(0);
@@ -12,6 +12,7 @@ export const Screen = () => {
 
   useEffect(() => {
     setTitle(playing ? actual : "");
+    pasarId(playing ? id : 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [playing]);
 
