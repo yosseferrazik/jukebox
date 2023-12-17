@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+#jukebox {
+  box-shadow: 0 0 0 8vh #ca4e79, 0 0 17vh 14vh #ca4e79, 0 0 0 18vh #ffc18e,
+    0 0 1vh 18vh #ffc18e;
+  background: #7a4069;
+
+  align-self: center;
+  justify-self: center;
+  place-items: center;
+
+  border-radius: 50% 50% 10px 10px;
+
+  min-width: 300px;
+  min-height: 120px;
+
+  height: auto;
+
+  margin-top: 10px;
+  padding: 10vh;
+  margin: 15%;
+}
+#screen {
+  margin: auto;
+  padding: 10px;
+
+  box-shadow: 0 0 1vh 0vh #a354bb;
+  border: 20px solid #6e357f;
+  background-color: #333333;
+  color: white;
+
+  word-wrap: break-word;
+
+  width: auto;
+  max-width: 500px;
+  height: 250px;
+
+  border-radius: 20px;
+
+  font-family: "Kanit";
+}
+#actual-song {
+  text-align: left;
+}
+.tags {
+  width: 110px;
+  height: 35px;
+
+  background-color: #7b7777;
+  border: none;
+  color: #333333;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 2px;
+
+  cursor: pointer;
+}
+
+#search-form {
+  margin: auto;
+  padding: 10px;
+
+  max-width: 500px;
+  min-height: 120px;
+
+  height: auto;
+
+  box-shadow: 0 0 1vh 0vh #a354bb;
+  border: 10px solid #6e357f;
+  border-radius: 15px;
+
+  background-color: #333333;
+  color: #e2e2e2;
+}
+#music-input {
+  text-align: center;
+  outline: none;
+  border: none;
+
+  background: transparent;
+  color: #e2e2e2;
+
+  height: 30px;
+  width: 100%;
+}
+#tag-filter {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  place-items: center;
+  list-style: none;
+}
+.tag-menu {
+  margin: auto;
+}
+.tag-menu {
+  background-color: #7b7777;
+
+  border: none;
+
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+#img-cont {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+.vynil {
+  animation: rotate 4s linear infinite;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  transition: opacity 0.5s ease;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#musicbutton-table {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  #jukebox {
+    box-shadow: 0 0 0 10px #ca4e79, 0 0 15px 10px #ca4e79, 0 0 0 20px #ffc18e,
+      0 0 25px 20px #ffc18e;
+    margin-top: 10px;
+    border-radius: 0px;
+
+    width: 50px;
+
+    margin: auto;
+    padding: 0;
+  }
+  #screen {
+    font-size: small;
+    border-radius: 10px;
+
+    padding: 15px;
+    margin: 10px;
+  }
+  #search-form {
+    margin: 20px;
+  }
+}
