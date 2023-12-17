@@ -1,4 +1,8 @@
-# Jukebox con React.js [![Netlify Status](https://api.netlify.com/api/v1/badges/6a30c37f-45b1-4cd9-918d-38a2529cd635/deploy-status)](https://app.netlify.com/sites/react-jukebox/deploys)
-### Mis canciones favoritas en una app de Reactjs
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
